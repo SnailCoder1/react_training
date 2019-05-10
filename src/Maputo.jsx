@@ -1,8 +1,9 @@
 import React from "react"
 
+
 const Maputo = () => {
         return (
-            <div> Hello Maputo</div>
+                <p className="content-text">Hello Maputo</p>
         )
 }
 

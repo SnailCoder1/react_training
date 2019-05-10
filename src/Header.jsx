@@ -1,11 +1,13 @@
 import React from "react"
 
+
+
 const Header = () => {
-        return (
-            <nav> 
-              <h1>Maputo</h1>
-            </nav>
-        )
+    return (
+      <nav className="header">
+              <h1 className="header-title">Maputo</h1>
+      </nav>
+  )
 }
 
 export default Header 
