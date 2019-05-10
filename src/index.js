@@ -1,10 +1,20 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import Maputo from "./Maputo"
+import Header from "./Header"
+import Footer from "./Footer"
 
-const ThisIsMaputo = () => {
-  return <h2>This is Maputo</h2>
+const App = () => {
+  return (
+      <div>   
+          <Maputo />
+          <Header />
+          <Footer />
+      </div>
+  )
 };
 
 
 
-ReactDOM.render(<ThisIsMaputo />, document.getElementById("app"))
+ReactDOM.render(<App />, document.getElementById("app"))
+
