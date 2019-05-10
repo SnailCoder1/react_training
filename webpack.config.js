@@ -1,14 +1,15 @@
 const path = require("path")
 const webpack = require("webpack")
 
-modules.export = {
+module.exports = {
   entry: "./src/index.js",
   mode: "development",
   module: {
     rules: [
       {
-        test: /\.(js|JSX)$/,
+        test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
+        loader: "babel-loader",
         options: { presets: ["@babel/env"] }
       },
       {
@@ -27,9 +28,7 @@ modules.export = {
     contentBase: path.join(__dirname, "/"),
     port: 3000,
     publicPath: "http://localhost:3000/dist/",
-    watchContentBase: true 
+    watchContentBase: true
   },
   plugins: [new webpack.HotModuleReplacementPlugin()]
-
 }
-
